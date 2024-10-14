@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--컬러 설정 가능-->
+    <color name="myColor1">#ff9500</color>
+    <color name="myColor2">#fcd757</color>
+    <color name="myColor3">#5e5b52</color>
+    <color name="myColor4">#eefc57</color>
+
+</resources>

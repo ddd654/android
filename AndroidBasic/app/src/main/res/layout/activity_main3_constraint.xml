@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <!--    <Button-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="뻐튼"-->
+
+
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"></Button>-->
+    <!--    &lt;!&ndash;부모의 왼쪽에 왼쪽 부분을 붙인다&ndash;&gt;-->
+    <!--    <Button-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="뻐튼"-->
+
+
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"></Button>-->
+    <!--    &lt;!&ndash;부모의 왼쪽에 왼쪽 부분을 붙인다&ndash;&gt;-->
+
+
+    <!--버튼끼리 양방향 연결하기-->
+    <!--
+    spread 균등분할
+    spread inside 양쪽 붙이고 분할
+    packed 서로 한팩으로 합쳐 붙이기
+    -->
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        android:text="뻐튼1"
+
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn2"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        ></Button>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뻐튼2"
+
+
+        app:layout_constraintLeft_toRightOf="@+id/btn1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        ></Button>
+    <!--지금 아이디가 btn2지만 btn1의 오른쪽에 btn2의 왼쪽을 붙인다!-->
+
+    <!-- 한쪽으로 치우치게-->
+    <!--
+    bias로 치우침 비율을 조절한다
+    -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정중앙"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintVertical_bias="0.7"
+
+
+        ></Button>
+    <!--bias로 비율 위치조정-->
+
+    <!--버튼 3개 위치 조지기-->
+    <Button
+        android:id="@+id/ex_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="apple"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        ></Button>
+
+    <Button
+        android:id="@+id/ex_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bana"
+
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintVertical_bias="0.6"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintRight_toLeftOf="@+id/ex_btn1"
+        app:layout_constraintLeft_toRightOf="@+id/ex_btn3"
+        ></Button>
+
+    <Button
+        android:id="@+id/ex_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kiwi"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        ></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
