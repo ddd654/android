@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidBasic"
 include(":app")
- 
+include(":activity")
