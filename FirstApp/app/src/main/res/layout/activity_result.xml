@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_img"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수고하셨습니다 \n모든 문제가 끝났습니다"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/result"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름: 홍길동\n총 x문제 정답입니다"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/myColor1"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/result_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="다시 시도하기"
+        app:cornerRadius="0dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+</LinearLayout>

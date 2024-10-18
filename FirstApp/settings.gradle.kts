@@ -19,7 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AndroidBasic"
+rootProject.name = "FirstApp"
 include(":app")
-include(":activity")
-include(":permission")
+ 

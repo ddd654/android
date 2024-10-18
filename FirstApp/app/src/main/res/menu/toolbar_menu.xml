@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+        ifRoom - 자리가 있으면 표현함
+        never - 드롭다운으로 보여줌
+        always - 항상 보여줌
+    -->
+
+    <item
+        android:id="@+id/menu1"
+        android:enabled="true"
+        android:icon="@drawable/baseline_data_exploration_24"
+        android:title="검색"
+        app:showAsAction="ifRoom"></item>
+
+    <item
+        android:id="@+id/menu2"
+        android:enabled="true"
+        android:icon="@drawable/baseline_360_24"
+        android:title="검색"
+        app:showAsAction="ifRoom"></item>
+
+    <item
+        android:id="@+id/menu3"
+        android:enabled="true"
+        android:title="더보기1"
+        app:showAsAction="never"
+
+        ></item>
+    <item
+        android:id="@+id/menu4"
+        android:enabled="true"
+        android:title="더보기2"
+        app:showAsAction="never"
+
+        ></item>
+</menu>

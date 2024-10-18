@@ -3,6 +3,21 @@
     <style name="Base.Theme.AndroidBasic" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- 상태바 색깔-->
+        <!--        <item name= "android:statusBarColor">#FFC400</item>-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+
+        <!--상태바 숨기기, 저 안에 true false-->
+        <item name="android:windowFullscreen"></item>
+
+        <!-- 상태바 내용물 껌정으로-->
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="colorPrimary">#008800</item> <!--앱 디자인 전역 설정-->
+        <item name="colorPrimaryVariant">#fff000</item>
+        <item name="colorSecondary">#ff0000</item>
     </style>
 
     <style name="Theme.AndroidBasic" parent="Base.Theme.AndroidBasic" />

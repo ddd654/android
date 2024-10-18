@@ -5,11 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:gravity="center"
 
     android:orientation="vertical"
-    android:gravity="center"
-    >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/ex_text"
@@ -18,12 +17,12 @@
         android:text="1"
 
         />
+
     <Button
         android:id="@+id/plus_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+"
-        ></Button>
+        android:text="+"></Button>
 
     <Button
         android:id="@+id/change_btn"
@@ -37,8 +36,45 @@
         android:id="@+id/change_btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="암시적 인텐트"
-        ></Button>
+        android:text="암시적 인텐트"></Button>
 
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/textview_rounded_circle"
+        android:text="백그 디자인"
+
+        ></TextView>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_rounded_rectangle"
+        android:text="백그 디자인2"
+
+        />
+
+    <!-- 버튼 디자인-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFED78"
+        android:text="직버튼123"
+        android:textColor="@color/black"
+        app:cornerRadius="3dp" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="이름여"
+        android:background="@drawable/textview_rounded_rectangle"
+
+
+        />
+    <!--전역 설정하면 영향을 전부 받아서 생각해서 써야한다-->
+    <!--실행하면 커서가 빨간색됨, 전역설정때문에-->
 
 </LinearLayout>

@@ -77,7 +77,8 @@ class MainActivity : AppCompatActivity() {
         binding.changeBtn.setOnClickListener {//누르면
             //전환한다
 
-//            val intent = Intent(this, cocoIntent::class.java) //Intent객체, 매개변수에는 Context와 실행시키고픈 클래스
+//            val intent = Intent(this, cocoIntent::class.java)
+            // Intent객체, 매개변수에는 Context와 실행시키고픈 클래스
 //
 //            //그 사이 코드
 //            intent.putExtra("data1", "사과")
@@ -171,6 +172,7 @@ class MainActivity : AppCompatActivity() {
         cnt = savedInstanceState.getInt("data22")
         binding.exText.text = cnt.toString() //값을 여기다 다시 넣어서 유지된것처럼 보인다
     }
+
 
 
 }
