@@ -41,7 +41,7 @@
       </SelectionState>
       <SelectionState runConfigName="roomdatabase">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-10-21T03:39:41.920512100Z">
+        <DropdownSelection timestamp="2024-10-24T00:03:24.728545200Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\user\.android\avd\Pixel_3a_API_35.avd" />
